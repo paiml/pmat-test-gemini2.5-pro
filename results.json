@@ -1,0 +1,1529 @@
+{
+  "complexity": {
+    "summary": {
+      "summary": {
+        "total_files": 1,
+        "total_functions": 52,
+        "median_cyclomatic": 2.0,
+        "median_cognitive": 1.5,
+        "max_cyclomatic": 23,
+        "max_cognitive": 120,
+        "p90_cyclomatic": 7,
+        "p90_cognitive": 19,
+        "technical_debt_hours": 68.25
+      },
+      "violations": [
+        {
+          "severity": "error",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 36 exceeds maximum allowed complexity of 30",
+          "value": 36,
+          "threshold": 30,
+          "file": "./find.py",
+          "line": 40,
+          "function": "_pre_process_options"
+        },
+        {
+          "severity": "error",
+          "rule": "cyclomatic-complexity",
+          "message": "Cyclomatic complexity of 23 exceeds maximum allowed complexity of 20",
+          "value": 23,
+          "threshold": 20,
+          "file": "./find.py",
+          "line": 95,
+          "function": "_walk"
+        },
+        {
+          "severity": "error",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 120 exceeds maximum allowed complexity of 30",
+          "value": 120,
+          "threshold": 30,
+          "file": "./find.py",
+          "line": 95,
+          "function": "_walk"
+        },
+        {
+          "severity": "warning",
+          "rule": "cyclomatic-complexity",
+          "message": "Cyclomatic complexity of 14 exceeds recommended complexity of 10",
+          "value": 14,
+          "threshold": 10,
+          "file": "./find.py",
+          "line": 226,
+          "function": "_parse_primary"
+        },
+        {
+          "severity": "error",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 59 exceeds maximum allowed complexity of 30",
+          "value": 59,
+          "threshold": 30,
+          "file": "./find.py",
+          "line": 226,
+          "function": "_parse_primary"
+        },
+        {
+          "severity": "warning",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 19 exceeds recommended complexity of 15",
+          "value": 19,
+          "threshold": 15,
+          "file": "./find.py",
+          "line": 330,
+          "function": "_test_perm"
+        },
+        {
+          "severity": "error",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 31 exceeds maximum allowed complexity of 30",
+          "value": 31,
+          "threshold": 30,
+          "file": "./find.py",
+          "line": 435,
+          "function": "_action_ls"
+        },
+        {
+          "severity": "warning",
+          "rule": "cyclomatic-complexity",
+          "message": "Cyclomatic complexity of 11 exceeds recommended complexity of 10",
+          "value": 11,
+          "threshold": 10,
+          "file": "./find.py",
+          "line": 478,
+          "function": "_action_exec"
+        },
+        {
+          "severity": "error",
+          "rule": "cognitive-complexity",
+          "message": "Cognitive complexity of 33 exceeds maximum allowed complexity of 30",
+          "value": 33,
+          "threshold": 30,
+          "file": "./find.py",
+          "line": 478,
+          "function": "_action_exec"
+        }
+      ],
+      "hotspots": [
+        {
+          "file": "./find.py",
+          "function": "_walk",
+          "line": 95,
+          "complexity": 23,
+          "complexity_type": "cyclomatic"
+        },
+        {
+          "file": "./find.py",
+          "function": "_parse_primary",
+          "line": 226,
+          "complexity": 14,
+          "complexity_type": "cyclomatic"
+        },
+        {
+          "file": "./find.py",
+          "function": "_action_exec",
+          "line": 478,
+          "complexity": 11,
+          "complexity_type": "cyclomatic"
+        }
+      ],
+      "files": [
+        {
+          "path": "./find.py",
+          "total_complexity": {
+            "cyclomatic": 167,
+            "cognitive": 426,
+            "nesting_max": 11,
+            "lines": 567,
+            "halstead": null
+          },
+          "functions": [
+            {
+              "name": "__init__",
+              "line_start": 19,
+              "line_end": 39,
+              "metrics": {
+                "cyclomatic": 2,
+                "cognitive": 1,
+                "nesting_max": 1,
+                "lines": 21,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_pre_process_options",
+              "line_start": 40,
+              "line_end": 68,
+              "metrics": {
+                "cyclomatic": 9,
+                "cognitive": 36,
+                "nesting_max": 8,
+                "lines": 29,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_parse_initial_args",
+              "line_start": 69,
+              "line_end": 86,
+              "metrics": {
+                "cyclomatic": 4,
+                "cognitive": 8,
+                "nesting_max": 3,
+                "lines": 18,
+                "halstead": null
+              }
+            },
+            {
+              "name": "run",
+              "line_start": 87,
+              "line_end": 94,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 5,
+                "nesting_max": 3,
+                "lines": 8,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_walk",
+              "line_start": 95,
+              "line_end": 167,
+              "metrics": {
+                "cyclomatic": 23,
+                "cognitive": 120,
+                "nesting_max": 11,
+                "lines": 73,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_evaluate_expression",
+              "line_start": 168,
+              "line_end": 172,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 4,
+                "nesting_max": 1,
+                "lines": 5,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_peek",
+              "line_start": 174,
+              "line_end": 176,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 3,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_consume",
+              "line_start": 177,
+              "line_end": 184,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 5,
+                "nesting_max": 3,
+                "lines": 8,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_parse_or_expr",
+              "line_start": 185,
+              "line_end": 199,
+              "metrics": {
+                "cyclomatic": 5,
+                "cognitive": 9,
+                "nesting_max": 4,
+                "lines": 15,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_parse_and_expr",
+              "line_start": 200,
+              "line_end": 214,
+              "metrics": {
+                "cyclomatic": 6,
+                "cognitive": 14,
+                "nesting_max": 5,
+                "lines": 15,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_parse_not_expr",
+              "line_start": 215,
+              "line_end": 225,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 5,
+                "nesting_max": 3,
+                "lines": 11,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_parse_primary",
+              "line_start": 226,
+              "line_end": 268,
+              "metrics": {
+                "cyclomatic": 14,
+                "cognitive": 59,
+                "nesting_max": 8,
+                "lines": 43,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_get_num_args",
+              "line_start": 269,
+              "line_end": 279,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 4,
+                "nesting_max": 2,
+                "lines": 11,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_compare_num",
+              "line_start": 281,
+              "line_end": 291,
+              "metrics": {
+                "cyclomatic": 4,
+                "cognitive": 6,
+                "nesting_max": 2,
+                "lines": 11,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_time",
+              "line_start": 292,
+              "line_end": 306,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 5,
+                "nesting_max": 3,
+                "lines": 15,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_name",
+              "line_start": 308,
+              "line_end": 308,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_iname",
+              "line_start": 309,
+              "line_end": 309,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_path",
+              "line_start": 310,
+              "line_end": 310,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_ipath",
+              "line_start": 311,
+              "line_end": 311,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_regex",
+              "line_start": 312,
+              "line_end": 312,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_iregex",
+              "line_start": 313,
+              "line_end": 314,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_type",
+              "line_start": 315,
+              "line_end": 329,
+              "metrics": {
+                "cyclomatic": 4,
+                "cognitive": 12,
+                "nesting_max": 5,
+                "lines": 15,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_perm",
+              "line_start": 330,
+              "line_end": 347,
+              "metrics": {
+                "cyclomatic": 6,
+                "cognitive": 19,
+                "nesting_max": 4,
+                "lines": 18,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_size",
+              "line_start": 348,
+              "line_end": 377,
+              "metrics": {
+                "cyclomatic": 7,
+                "cognitive": 11,
+                "nesting_max": 4,
+                "lines": 30,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_mtime",
+              "line_start": 378,
+              "line_end": 378,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_atime",
+              "line_start": 379,
+              "line_end": 379,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_ctime",
+              "line_start": 380,
+              "line_end": 380,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_mmin",
+              "line_start": 381,
+              "line_end": 381,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_amin",
+              "line_start": 382,
+              "line_end": 382,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_cmin",
+              "line_start": 383,
+              "line_end": 384,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_empty",
+              "line_start": 385,
+              "line_end": 393,
+              "metrics": {
+                "cyclomatic": 3,
+                "cognitive": 7,
+                "nesting_max": 4,
+                "lines": 9,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_links",
+              "line_start": 394,
+              "line_end": 399,
+              "metrics": {
+                "cyclomatic": 2,
+                "cognitive": 3,
+                "nesting_max": 3,
+                "lines": 6,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_inum",
+              "line_start": 400,
+              "line_end": 405,
+              "metrics": {
+                "cyclomatic": 2,
+                "cognitive": 3,
+                "nesting_max": 3,
+                "lines": 6,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_newer",
+              "line_start": 406,
+              "line_end": 414,
+              "metrics": {
+                "cyclomatic": 2,
+                "cognitive": 3,
+                "nesting_max": 3,
+                "lines": 9,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_anewer",
+              "line_start": 415,
+              "line_end": 415,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_cnewer",
+              "line_start": 416,
+              "line_end": 417,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_readable",
+              "line_start": 418,
+              "line_end": 418,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_writable",
+              "line_start": 419,
+              "line_end": 419,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_executable",
+              "line_start": 420,
+              "line_end": 421,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_true",
+              "line_start": 422,
+              "line_end": 422,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 1,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_test_false",
+              "line_start": 423,
+              "line_end": 424,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 0,
+                "lines": 2,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_print",
+              "line_start": 426,
+              "line_end": 429,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 4,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_print0",
+              "line_start": 430,
+              "line_end": 434,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 5,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_ls",
+              "line_start": 435,
+              "line_end": 466,
+              "metrics": {
+                "cyclomatic": 7,
+                "cognitive": 31,
+                "nesting_max": 8,
+                "lines": 32,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_delete",
+              "line_start": 467,
+              "line_end": 477,
+              "metrics": {
+                "cyclomatic": 4,
+                "cognitive": 9,
+                "nesting_max": 5,
+                "lines": 11,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_exec",
+              "line_start": 478,
+              "line_end": 505,
+              "metrics": {
+                "cyclomatic": 11,
+                "cognitive": 33,
+                "nesting_max": 4,
+                "lines": 28,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_ok",
+              "line_start": 506,
+              "line_end": 508,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_execdir",
+              "line_start": 509,
+              "line_end": 511,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_okdir",
+              "line_start": 512,
+              "line_end": 514,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_prune",
+              "line_start": 515,
+              "line_end": 520,
+              "metrics": {
+                "cyclomatic": 2,
+                "cognitive": 2,
+                "nesting_max": 2,
+                "lines": 6,
+                "halstead": null
+              }
+            },
+            {
+              "name": "_action_quit",
+              "line_start": 521,
+              "line_end": 523,
+              "metrics": {
+                "cyclomatic": 1,
+                "cognitive": 0,
+                "nesting_max": 1,
+                "lines": 3,
+                "halstead": null
+              }
+            },
+            {
+              "name": "main",
+              "line_start": 542,
+              "line_end": 565,
+              "metrics": {
+                "cyclomatic": 4,
+                "cognitive": 9,
+                "nesting_max": 4,
+                "lines": 24,
+                "halstead": null
+              }
+            }
+          ],
+          "classes": []
+        }
+      ]
+    },
+    "files": [
+      {
+        "path": "./find.py",
+        "total_complexity": {
+          "cyclomatic": 167,
+          "cognitive": 426,
+          "nesting_max": 11,
+          "lines": 567,
+          "halstead": null
+        },
+        "functions": [
+          {
+            "name": "__init__",
+            "line_start": 19,
+            "line_end": 39,
+            "metrics": {
+              "cyclomatic": 2,
+              "cognitive": 1,
+              "nesting_max": 1,
+              "lines": 21,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_pre_process_options",
+            "line_start": 40,
+            "line_end": 68,
+            "metrics": {
+              "cyclomatic": 9,
+              "cognitive": 36,
+              "nesting_max": 8,
+              "lines": 29,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_parse_initial_args",
+            "line_start": 69,
+            "line_end": 86,
+            "metrics": {
+              "cyclomatic": 4,
+              "cognitive": 8,
+              "nesting_max": 3,
+              "lines": 18,
+              "halstead": null
+            }
+          },
+          {
+            "name": "run",
+            "line_start": 87,
+            "line_end": 94,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 5,
+              "nesting_max": 3,
+              "lines": 8,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_walk",
+            "line_start": 95,
+            "line_end": 167,
+            "metrics": {
+              "cyclomatic": 23,
+              "cognitive": 120,
+              "nesting_max": 11,
+              "lines": 73,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_evaluate_expression",
+            "line_start": 168,
+            "line_end": 172,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 4,
+              "nesting_max": 1,
+              "lines": 5,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_peek",
+            "line_start": 174,
+            "line_end": 176,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 3,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_consume",
+            "line_start": 177,
+            "line_end": 184,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 5,
+              "nesting_max": 3,
+              "lines": 8,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_parse_or_expr",
+            "line_start": 185,
+            "line_end": 199,
+            "metrics": {
+              "cyclomatic": 5,
+              "cognitive": 9,
+              "nesting_max": 4,
+              "lines": 15,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_parse_and_expr",
+            "line_start": 200,
+            "line_end": 214,
+            "metrics": {
+              "cyclomatic": 6,
+              "cognitive": 14,
+              "nesting_max": 5,
+              "lines": 15,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_parse_not_expr",
+            "line_start": 215,
+            "line_end": 225,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 5,
+              "nesting_max": 3,
+              "lines": 11,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_parse_primary",
+            "line_start": 226,
+            "line_end": 268,
+            "metrics": {
+              "cyclomatic": 14,
+              "cognitive": 59,
+              "nesting_max": 8,
+              "lines": 43,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_get_num_args",
+            "line_start": 269,
+            "line_end": 279,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 4,
+              "nesting_max": 2,
+              "lines": 11,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_compare_num",
+            "line_start": 281,
+            "line_end": 291,
+            "metrics": {
+              "cyclomatic": 4,
+              "cognitive": 6,
+              "nesting_max": 2,
+              "lines": 11,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_time",
+            "line_start": 292,
+            "line_end": 306,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 5,
+              "nesting_max": 3,
+              "lines": 15,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_name",
+            "line_start": 308,
+            "line_end": 308,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_iname",
+            "line_start": 309,
+            "line_end": 309,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_path",
+            "line_start": 310,
+            "line_end": 310,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_ipath",
+            "line_start": 311,
+            "line_end": 311,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_regex",
+            "line_start": 312,
+            "line_end": 312,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_iregex",
+            "line_start": 313,
+            "line_end": 314,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_type",
+            "line_start": 315,
+            "line_end": 329,
+            "metrics": {
+              "cyclomatic": 4,
+              "cognitive": 12,
+              "nesting_max": 5,
+              "lines": 15,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_perm",
+            "line_start": 330,
+            "line_end": 347,
+            "metrics": {
+              "cyclomatic": 6,
+              "cognitive": 19,
+              "nesting_max": 4,
+              "lines": 18,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_size",
+            "line_start": 348,
+            "line_end": 377,
+            "metrics": {
+              "cyclomatic": 7,
+              "cognitive": 11,
+              "nesting_max": 4,
+              "lines": 30,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_mtime",
+            "line_start": 378,
+            "line_end": 378,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_atime",
+            "line_start": 379,
+            "line_end": 379,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_ctime",
+            "line_start": 380,
+            "line_end": 380,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_mmin",
+            "line_start": 381,
+            "line_end": 381,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_amin",
+            "line_start": 382,
+            "line_end": 382,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_cmin",
+            "line_start": 383,
+            "line_end": 384,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_empty",
+            "line_start": 385,
+            "line_end": 393,
+            "metrics": {
+              "cyclomatic": 3,
+              "cognitive": 7,
+              "nesting_max": 4,
+              "lines": 9,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_links",
+            "line_start": 394,
+            "line_end": 399,
+            "metrics": {
+              "cyclomatic": 2,
+              "cognitive": 3,
+              "nesting_max": 3,
+              "lines": 6,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_inum",
+            "line_start": 400,
+            "line_end": 405,
+            "metrics": {
+              "cyclomatic": 2,
+              "cognitive": 3,
+              "nesting_max": 3,
+              "lines": 6,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_newer",
+            "line_start": 406,
+            "line_end": 414,
+            "metrics": {
+              "cyclomatic": 2,
+              "cognitive": 3,
+              "nesting_max": 3,
+              "lines": 9,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_anewer",
+            "line_start": 415,
+            "line_end": 415,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_cnewer",
+            "line_start": 416,
+            "line_end": 417,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_readable",
+            "line_start": 418,
+            "line_end": 418,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_writable",
+            "line_start": 419,
+            "line_end": 419,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_executable",
+            "line_start": 420,
+            "line_end": 421,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_true",
+            "line_start": 422,
+            "line_end": 422,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 1,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_test_false",
+            "line_start": 423,
+            "line_end": 424,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 0,
+              "lines": 2,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_print",
+            "line_start": 426,
+            "line_end": 429,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 4,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_print0",
+            "line_start": 430,
+            "line_end": 434,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 5,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_ls",
+            "line_start": 435,
+            "line_end": 466,
+            "metrics": {
+              "cyclomatic": 7,
+              "cognitive": 31,
+              "nesting_max": 8,
+              "lines": 32,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_delete",
+            "line_start": 467,
+            "line_end": 477,
+            "metrics": {
+              "cyclomatic": 4,
+              "cognitive": 9,
+              "nesting_max": 5,
+              "lines": 11,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_exec",
+            "line_start": 478,
+            "line_end": 505,
+            "metrics": {
+              "cyclomatic": 11,
+              "cognitive": 33,
+              "nesting_max": 4,
+              "lines": 28,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_ok",
+            "line_start": 506,
+            "line_end": 508,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_execdir",
+            "line_start": 509,
+            "line_end": 511,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_okdir",
+            "line_start": 512,
+            "line_end": 514,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_prune",
+            "line_start": 515,
+            "line_end": 520,
+            "metrics": {
+              "cyclomatic": 2,
+              "cognitive": 2,
+              "nesting_max": 2,
+              "lines": 6,
+              "halstead": null
+            }
+          },
+          {
+            "name": "_action_quit",
+            "line_start": 521,
+            "line_end": 523,
+            "metrics": {
+              "cyclomatic": 1,
+              "cognitive": 0,
+              "nesting_max": 1,
+              "lines": 3,
+              "halstead": null
+            }
+          },
+          {
+            "name": "main",
+            "line_start": 542,
+            "line_end": 565,
+            "metrics": {
+              "cyclomatic": 4,
+              "cognitive": 9,
+              "nesting_max": 4,
+              "lines": 24,
+              "halstead": null
+            }
+          }
+        ],
+        "classes": []
+      }
+    ],
+    "top_files_limit": 10
+  },
+  "big_o": {
+    "summary": {
+      "analyzed_functions": 59,
+      "high_complexity_count": 12
+    },
+    "distribution": {
+      "O(1)": 0,
+      "O(log n)": 0,
+      "O(n)": 33,
+      "O(n log n)": 0,
+      "O(n\u00b2)": 3,
+      "O(n\u00b3)": 9,
+      "O(2^n)": 0,
+      "O(?)": 14
+    },
+    "high_complexity_functions": [
+      {
+        "file": "./find.py",
+        "function": "_parse_and_expr",
+        "line": 200,
+        "time_complexity": "O(n\u00b2)",
+        "space_complexity": "O(n)",
+        "confidence": 72
+      },
+      {
+        "file": "./find.py",
+        "function": "_parse_and_expr",
+        "line": 200,
+        "time_complexity": "O(n\u00b2)",
+        "space_complexity": "O(n)",
+        "confidence": 72
+      },
+      {
+        "file": "./find.py",
+        "function": "expressions",
+        "line": 201,
+        "time_complexity": "O(n\u00b2)",
+        "space_complexity": "O(n)",
+        "confidence": 72
+      },
+      {
+        "file": "./find.py",
+        "function": "_evaluate_expression",
+        "line": 168,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./find.py",
+        "function": "_peek",
+        "line": 174,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./find.py",
+        "function": "_consume",
+        "line": 177,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./find.py",
+        "function": "_parse_or_expr",
+        "line": 185,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./find.py",
+        "function": "_evaluate_expression",
+        "line": 168,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./find.py",
+        "function": "_peek",
+        "line": 174,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./find.py",
+        "function": "_consume",
+        "line": 177,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./find.py",
+        "function": "ValueError",
+        "line": 180,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      },
+      {
+        "file": "./find.py",
+        "function": "_parse_or_expr",
+        "line": 185,
+        "time_complexity": "O(n\u00b3)",
+        "space_complexity": "O(n)",
+        "confidence": 70
+      }
+    ],
+    "pattern_matches": [],
+    "recommendations": [
+      "Found 3 functions with O(n\u00b2) complexity. Consider optimization."
+    ]
+  }
+}
